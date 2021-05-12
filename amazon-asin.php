@@ -2,12 +2,12 @@
 include('amazon_api.php');
 /* Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved. */
 /* Licensed under the Apache License, Version 2.0. */
-$ASIN = $_GET['id'];
+$ASIN = 'B084DWH53T'; //enter asin of product
 $serviceName = "ProductAdvertisingAPI";
 $region = "eu-west-1";
-$accessKey = "Enter your access key";
-$secretKey = "Enter your secret key";
-$AssociateTag = "Enter your associate tag";
+$accessKey = "Enter your access key"; // Enter your access key
+$secretKey = "Enter your secret key"; //Enter your secret key
+$AssociateTag = "Enter your associate tag"; //Enter your associate tag
 $payload = "{"
     . " \"ItemIds\": ["
     . "  \"$ASIN\""
