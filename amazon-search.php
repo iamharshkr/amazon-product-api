@@ -3,13 +3,12 @@ include('amazon_api.php');
 /* Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved. */
 /* Licensed under the Apache License, Version 2.0. */
 
-// Put your Secret Key in place of **********
 $serviceName="ProductAdvertisingAPI";
 $region="eu-west-1";
-$accessKey="Enter your access key";
-$secretKey="Enter your secret key";
-$AssociateTag = "enter your associate tag";
-$keywords = $_GET['key'];
+$keywords = 'Bluetooth earphone'; //Enter your keywords.
+$accessKey = "Enter your access key"; // Enter your access key
+$secretKey = "Enter your secret key"; //Enter your secret key
+$AssociateTag = "Enter your associate tag"; //Enter your associate tag
 $payload="{"
         ." \"Keywords\": \"$keywords\","
         ." \"Resources\": ["
